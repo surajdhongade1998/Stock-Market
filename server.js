@@ -24,7 +24,7 @@ fetchStockPriceList();
 const interval = setInterval(fetchStockPriceList, 5000);
 
 // Define a route to serve the updated data
-app.get('/getData', (req, res) => {
+app.get('/api/getData', (req, res) => {
   res.json(apiData); // Return the stored API data
 });
 
